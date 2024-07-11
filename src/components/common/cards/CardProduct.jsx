@@ -10,8 +10,7 @@ export default function CardProduct({
   qty,
   title,
   image,
-  price,
-  handleClick
+  price
 }) {
   // useDispatch to dispatch action to store
   const dispatch = useDispatch();

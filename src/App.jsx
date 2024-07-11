@@ -33,6 +33,7 @@ function App() {
                 title={product.title}
                 price={product.price}
                 id={product.id}
+                qty={1}
                 key={index}
               />
             );

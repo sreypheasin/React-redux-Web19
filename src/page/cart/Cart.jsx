@@ -3,7 +3,7 @@ import ProductCart from "../../components/common/cards/ProductCart";
 import { useSelector } from "react-redux";
 export function Cart() {
   const products = useSelector((state) => state?.cart?.items);
-  // console.log(products);
+  console.log("products", products);
   return (
     <div className="flex justify-center items-center">
       <Card className="w-1/2">
@@ -15,6 +15,7 @@ export function Cart() {
         {products && (
           <div className="overflow-y-auto h-[70vh]	">
             {products.map((product, index) => {
+              console.log("product.id", product.id);
               return (
                 <ProductCart
                   image={product.image}
